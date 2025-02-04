@@ -6,15 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		754E02E12D5211770075D45E /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 754E02E02D5211770075D45E /* CombineMoya */; };
+		754E02E32D5211770075D45E /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 754E02E22D5211770075D45E /* Moya */; };
+		754E02E62D5211A00075D45E /* Navigator in Frameworks */ = {isa = PBXBuildFile; productRef = 754E02E52D52119F0075D45E /* Navigator */; };
+		754E02E82D5219390075D45E /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 754E02E72D5219390075D45E /* Readme.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		754E026D2D520F990075D45E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 754E02542D520F970075D45E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 754E025B2D520F970075D45E;
-			remoteInfo = "iOS Interview Task";
-		};
-		754E02772D520F990075D45E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 754E02542D520F970075D45E /* Project object */;
 			proxyType = 1;
@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		754E025C2D520F970075D45E /* iOS Interview Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Interview Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		754E026C2D520F990075D45E /* iOS Interview TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Interview TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		754E02762D520F990075D45E /* iOS Interview TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Interview TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754E02E72D5219390075D45E /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,11 +40,6 @@
 			path = "iOS Interview TaskTests";
 			sourceTree = "<group>";
 		};
-		754E02792D520F990075D45E /* iOS Interview TaskUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "iOS Interview TaskUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +47,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754E02E32D5211770075D45E /* Moya in Frameworks */,
+				754E02E12D5211770075D45E /* CombineMoya in Frameworks */,
+				754E02E62D5211A00075D45E /* Navigator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		754E02692D520F990075D45E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		754E02732D520F990075D45E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,8 +68,8 @@
 			children = (
 				754E025E2D520F970075D45E /* iOS Interview Task */,
 				754E026F2D520F990075D45E /* iOS Interview TaskTests */,
-				754E02792D520F990075D45E /* iOS Interview TaskUITests */,
 				754E025D2D520F970075D45E /* Products */,
+				754E02E72D5219390075D45E /* Readme.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +78,6 @@
 			children = (
 				754E025C2D520F970075D45E /* iOS Interview Task.app */,
 				754E026C2D520F990075D45E /* iOS Interview TaskTests.xctest */,
-				754E02762D520F990075D45E /* iOS Interview TaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +102,9 @@
 			);
 			name = "iOS Interview Task";
 			packageProductDependencies = (
+				754E02E02D5211770075D45E /* CombineMoya */,
+				754E02E22D5211770075D45E /* Moya */,
+				754E02E52D52119F0075D45E /* Navigator */,
 			);
 			productName = "iOS Interview Task";
 			productReference = 754E025C2D520F970075D45E /* iOS Interview Task.app */;
@@ -140,29 +133,6 @@
 			productReference = 754E026C2D520F990075D45E /* iOS Interview TaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		754E02752D520F990075D45E /* iOS Interview TaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 754E02862D520F990075D45E /* Build configuration list for PBXNativeTarget "iOS Interview TaskUITests" */;
-			buildPhases = (
-				754E02722D520F990075D45E /* Sources */,
-				754E02732D520F990075D45E /* Frameworks */,
-				754E02742D520F990075D45E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				754E02782D520F990075D45E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				754E02792D520F990075D45E /* iOS Interview TaskUITests */,
-			);
-			name = "iOS Interview TaskUITests";
-			packageProductDependencies = (
-			);
-			productName = "iOS Interview TaskUITests";
-			productReference = 754E02762D520F990075D45E /* iOS Interview TaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +150,6 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 754E025B2D520F970075D45E;
 					};
-					754E02752D520F990075D45E = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 754E025B2D520F970075D45E;
-					};
 				};
 			};
 			buildConfigurationList = 754E02572D520F970075D45E /* Build configuration list for PBXProject "iOS Interview Task" */;
@@ -195,6 +161,10 @@
 			);
 			mainGroup = 754E02532D520F970075D45E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				754E02DF2D5211770075D45E /* XCRemoteSwiftPackageReference "Moya" */,
+				754E02E42D52119F0075D45E /* XCRemoteSwiftPackageReference "Navigator" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 754E025D2D520F970075D45E /* Products */;
 			projectDirPath = "";
@@ -202,7 +172,6 @@
 			targets = (
 				754E025B2D520F970075D45E /* iOS Interview Task */,
 				754E026B2D520F990075D45E /* iOS Interview TaskTests */,
-				754E02752D520F990075D45E /* iOS Interview TaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,17 +181,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754E02E82D5219390075D45E /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		754E026A2D520F990075D45E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		754E02742D520F990075D45E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +209,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		754E02722D520F990075D45E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +216,6 @@
 			isa = PBXTargetDependency;
 			target = 754E025B2D520F970075D45E /* iOS Interview Task */;
 			targetProxy = 754E026D2D520F990075D45E /* PBXContainerItemProxy */;
-		};
-		754E02782D520F990075D45E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 754E025B2D520F970075D45E /* iOS Interview Task */;
-			targetProxy = 754E02772D520F990075D45E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,7 +346,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS Interview Task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -403,6 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,9 +361,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "K.G.B.iOS-Interview-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -423,7 +378,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS Interview Task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -431,6 +385,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,9 +393,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "K.G.B.iOS-Interview-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -480,38 +439,6 @@
 			};
 			name = Release;
 		};
-		754E02872D520F990075D45E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "K.G.B.iOS-Interview-TaskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "iOS Interview Task";
-			};
-			name = Debug;
-		};
-		754E02882D520F990075D45E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "K.G.B.iOS-Interview-TaskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "iOS Interview Task";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -542,16 +469,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		754E02862D520F990075D45E /* Build configuration list for PBXNativeTarget "iOS Interview TaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				754E02872D520F990075D45E /* Debug */,
-				754E02882D520F990075D45E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		754E02DF2D5211770075D45E /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		754E02E42D52119F0075D45E /* XCRemoteSwiftPackageReference "Navigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Navigator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.15;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		754E02E02D5211770075D45E /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 754E02DF2D5211770075D45E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		754E02E22D5211770075D45E /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 754E02DF2D5211770075D45E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		754E02E52D52119F0075D45E /* Navigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 754E02E42D52119F0075D45E /* XCRemoteSwiftPackageReference "Navigator" */;
+			productName = Navigator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 754E02542D520F970075D45E /* Project object */;
 }
